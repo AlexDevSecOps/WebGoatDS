@@ -68,7 +68,7 @@ jobs:
 
     - run: |
          echo "Run, Build Application using script"
-         ./mvnw clean install #-Dmaven.test.skip=true
+         ./mvnw clean install -Dmaven.test.skip=true
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
